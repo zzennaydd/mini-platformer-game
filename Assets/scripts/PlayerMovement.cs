@@ -38,10 +38,5 @@ public class PlayerMovement : MonoBehaviour
             anim.SetBool("IsRunning", false);
         }
 
-       while(rb.velocity.y == 7f)
-        {
-            anim.SetBool("IsJumping", true);
-        }
-
     }
 }
