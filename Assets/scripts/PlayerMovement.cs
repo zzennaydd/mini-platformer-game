@@ -8,6 +8,9 @@ public class PlayerMovement : MonoBehaviour
     private SpriteRenderer sprite;
     private Animator anim;
     private float dirX = 0f;
+
+   [SerializeField] private float moveSpeed = 7f;
+   [SerializeField] private float jumpForce = 7f;
     // Start is called before the first frame update
    private void Start()
     {
@@ -21,18 +24,18 @@ public class PlayerMovement : MonoBehaviour
     {
         dirX = Input.GetAxisRaw("Horizontal");
        
-        rb.velocity = new Vector2(dirX * 7f, rb.velocity.y);
+        rb.velocity = new Vector2(dirX * moveSpeed, rb.velocity.y);
 
-        if(Input.GetButtonDown("Jump"))
+        if (Input.GetButtonDown("Jump"))
         {
-            rb.velocity = new Vector2(rb.velocity.x, 7f);
+            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
         }
 
-        UpdateAnimationUpdate();
+        UpdateAnimationState();
 
     }
 
-    private void UpdateAnimationUpdate()
+    private void UpdateAnimationState()
     {
         if(dirX > 0f)
         {
@@ -48,5 +51,6 @@ public class PlayerMovement : MonoBehaviour
         {
             anim.SetBool("IsRunning", false);
         }
+        
     }
 }
