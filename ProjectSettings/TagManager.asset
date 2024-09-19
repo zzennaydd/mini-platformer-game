@@ -6,6 +6,7 @@ TagManager:
   tags:
   - coin
   - GoldCoin
+  - Trap
   layers:
   - Default
   - TransparentFX
