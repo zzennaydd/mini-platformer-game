@@ -14,6 +14,9 @@ public class ItemCollector : MonoBehaviour
     [SerializeField] private Sprite fullKeySprite;
     private bool keyCollected = false;
     private bool keyCollectable = false;
+
+    [SerializeField] private AudioSource winSoundEffect;
+    [SerializeField] private AudioSource collectSoundEffect;
     private void Start()
     {
         emptyKeyRenderer = GameObject.Find("key").GetComponent<SpriteRenderer>();
@@ -23,6 +26,7 @@ public class ItemCollector : MonoBehaviour
     {
         if(keyCollected == true)
         {
+            winSoundEffect.Play();
             goldCoinsText.text = "You completed this level !";
         }
     }
@@ -30,6 +34,7 @@ public class ItemCollector : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("GoldCoin"))
         {
+            collectSoundEffect.Play();
             Destroy(collision.gameObject);
             goldCoins++;
             goldCoinsText.text = "Gold Coins Collected: " + goldCoins;
