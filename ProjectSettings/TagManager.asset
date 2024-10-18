@@ -9,6 +9,7 @@ TagManager:
   - Trap
   - ladder
   - key
+  - finishFlag
   layers:
   - Default
   - TransparentFX

@@ -10,26 +10,10 @@ public class ItemCollector : MonoBehaviour
     private int goldCoins = 0;
     [SerializeField] private TextMeshProUGUI goldCoinsText;
 
-    [SerializeField] private SpriteRenderer emptyKeyRenderer;
-    [SerializeField] private Sprite fullKeySprite;
-    private bool keyCollected = false;
-    private bool keyCollectable = false;
-
-    [SerializeField] private AudioSource winSoundEffect;
     [SerializeField] private AudioSource collectSoundEffect;
-    private void Start()
-    {
-        emptyKeyRenderer = GameObject.Find("key").GetComponent<SpriteRenderer>();
-
-    }
-    private void Update()
-    {
-        if(keyCollected == true)
-        {
-            winSoundEffect.Play();
-            goldCoinsText.text = "You completed this level !";
-        }
-    }
+    [SerializeField] private Finish finish;
+    private bool coinsCollected = false;
+  
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("GoldCoin"))
@@ -39,21 +23,16 @@ public class ItemCollector : MonoBehaviour
             goldCoins++;
             goldCoinsText.text = "Gold Coins Collected: " + goldCoins;
 
-            if (goldCoins >= 17)
+            if(goldCoins >= 17)
             {
-                emptyKeyRenderer.sprite = fullKeySprite;
-                keyCollectable = true;
-
+                coinsCollected = true;
+                goldCoinsText.text = "You completed this level!";
+            }
+           if(coinsCollected)
+            {
+                finish.FinishLevel();
             }
         }    
-            
-        if (collision.gameObject.CompareTag("key") && keyCollectable == true)
-        {
-            Destroy(collision.gameObject);
-            keyCollected = true;
-            
-
-        }
     }
     
     

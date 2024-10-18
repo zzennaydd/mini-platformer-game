@@ -12,7 +12,6 @@ public class LadderMovement : MonoBehaviour
     private Animator anim;
 
     [SerializeField] private Rigidbody2D rb;
-    [SerializeField] private AudioSource climbingSoundEffect;
 
     private void Start()
     {
@@ -31,7 +30,6 @@ public class LadderMovement : MonoBehaviour
     {
         if (isClimbing)
         {
-            climbingSoundEffect.Play();
             rb.gravityScale = 0f;
             rb.velocity = new Vector2(rb.velocity.x, vertical * speed);
             anim.SetBool("isClimbingLadder", true);
