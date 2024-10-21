@@ -10,6 +10,7 @@ TagManager:
   - ladder
   - key
   - finishFlag
+  - pendulum
   layers:
   - Default
   - TransparentFX

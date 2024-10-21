@@ -22,23 +22,23 @@ public class Finish : MonoBehaviour
         levelFinished = true;
         winSoundEffect.Play();
         anim.SetBool("coinsCollected", true);
-    
+
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))    
+        if (collision.gameObject.CompareTag("Player"))
         {
             if (levelFinished)
             {
-               
+
                 StartNextLevel();
             }
         }
     }
     private void StartNextLevel()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        SceneManager.LoadScene(SceneManager.GetSceneByName("Second Level").name);
     }
-    
-  
+
 }
+  
