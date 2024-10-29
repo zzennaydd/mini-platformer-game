@@ -11,6 +11,8 @@ TagManager:
   - key
   - finishFlag
   - pendulum
+  - pendulumEnd
+  - enemy
   layers:
   - Default
   - TransparentFX

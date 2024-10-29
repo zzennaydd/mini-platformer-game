@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 4495080675656948855}
   m_Layer: 0
   m_Name: chain (3)
-  m_TagString: Untagged
+  m_TagString: pendulumEnd
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -130,7 +130,7 @@ HingeJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0.64000034}
-  m_ConnectedAnchor: {x: 0, y: -0.55999947}
+  m_ConnectedAnchor: {x: -16.119469, y: 7.700001}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0

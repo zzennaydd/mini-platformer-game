@@ -3,7 +3,10 @@ guid: 907c6225e90546b4ba577184b0eb245d
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - ropeSegment: {fileID: 5221194692800449713, guid: 4e37c7c899ed8464ba68b20354f8393b, type: 3}
+  - HingeJoint: {fileID: 7793670729449385320, guid: 4e37c7c899ed8464ba68b20354f8393b, type: 3}
+  - pendulumEnd: {fileID: 7472959089945925885, guid: 4e37c7c899ed8464ba68b20354f8393b, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

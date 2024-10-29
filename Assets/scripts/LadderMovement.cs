@@ -15,7 +15,7 @@ public class LadderMovement : MonoBehaviour
 
     private void Start()
     {
-        anim = GetComponent <Animator>();
+        anim = GetComponent<Animator>();
     }
     void Update()
     {
