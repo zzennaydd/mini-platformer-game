@@ -21,8 +21,10 @@ public class ItemCollector : MonoBehaviour
             collectSoundEffect.Play();
             Destroy(collision.gameObject);
             goldCoins++;
-            goldCoinsText.text = "Gold Coins Collected: " + goldCoins;
-
+            if (goldCoinsText != null)
+            {
+                goldCoinsText.text = "Gold Coins Collected: " + goldCoins;
+            }
             if(goldCoins >= 17)
             {
                 coinsCollected = true;
