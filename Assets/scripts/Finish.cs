@@ -37,7 +37,7 @@ public class Finish : MonoBehaviour
     }
     private void StartNextLevel()
     {
-        SceneManager.LoadScene(SceneManager.GetSceneByName("Second Level").name);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex +1);
     }
 
 }

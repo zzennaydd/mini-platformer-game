@@ -2,12 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BeeController : MonoBehaviour
+public class Mouse : MonoBehaviour
 {
     [SerializeField] private GameObject[] waypoints;
     private int currentWaypointIndex = 0;
 
-    [SerializeField] private float speed = 8f;
+    [SerializeField] private float speed = 7f;
 
     private SpriteRenderer sprite;
 
@@ -24,7 +24,7 @@ public class BeeController : MonoBehaviour
             if (currentWaypointIndex >= waypoints.Length)
             {
                 currentWaypointIndex = 0;
-
+                
             }
             UpdateDirection();
         }
