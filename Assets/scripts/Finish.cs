@@ -30,8 +30,7 @@ public class Finish : MonoBehaviour
         {
             if (levelFinished)
             {
-
-                StartNextLevel();
+                Invoke("StartNextLevel", 2f);
             }
         }
     }
