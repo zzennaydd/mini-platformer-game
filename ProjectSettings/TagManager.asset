@@ -13,6 +13,7 @@ TagManager:
   - pendulum
   - pendulumEnd
   - enemy
+  - door
   layers:
   - Default
   - TransparentFX

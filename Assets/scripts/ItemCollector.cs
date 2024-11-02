@@ -7,13 +7,15 @@ using UnityEngine.UI;
 
 public class ItemCollector : MonoBehaviour
 {
+    
     private int goldCoins = 0;
     [SerializeField] private TextMeshProUGUI goldCoinsText;
 
     [SerializeField] private AudioSource collectSoundEffect;
     [SerializeField] private Finish finish;
     private bool coinsCollected = false;
-  
+    public bool keyCollected = false;
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("GoldCoin"))
@@ -34,8 +36,12 @@ public class ItemCollector : MonoBehaviour
             {
                 finish.FinishLevel();
             }
-        }    
+        }
+        if(collision.gameObject.CompareTag("key"))
+        {
+            Destroy(collision.gameObject);
+            keyCollected = true;
+        }
     }
-    
-    
+ 
 }

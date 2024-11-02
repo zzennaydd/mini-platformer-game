@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 3829197945375543294}
   - component: {fileID: 773736073024119668}
   - component: {fileID: 5697523183368672176}
+  - component: {fileID: 280442536120771799}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -497,6 +498,7 @@ MonoBehaviour:
   goldCoinsText: {fileID: 7329684254629401157, guid: e77bb3cf5a9d8a64aa3320ef61568731, type: 3}
   collectSoundEffect: {fileID: 8344158940163272964}
   finish: {fileID: 8794578001858768582, guid: be3b8294c35c5654c84dcd7622da6dbb, type: 3}
+  keyCollected: 0
 --- !u!114 &3829197945375543294
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -582,3 +584,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.0410831, y: 1.5582751}
   m_EdgeRadius: 0
+--- !u!114 &280442536120771799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9065295488121512703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5ee45d8c6eab4242b785b381a34be07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  door: {fileID: 7948314584153020944, guid: 59803c5f596822e4f9442e6b8acac060, type: 3}
+  key: {fileID: 3374410139592738859, guid: bded143b61b1d7c428903f674d08d1c5, type: 3}
