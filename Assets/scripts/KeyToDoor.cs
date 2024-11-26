@@ -17,7 +17,8 @@ public class KeytoDoor : MonoBehaviour
 
         if (coll != null)
         {
-            coll.isTrigger = false;       
+            coll.isTrigger = false;
+           
         }
     }
 
@@ -29,6 +30,7 @@ public class KeytoDoor : MonoBehaviour
             {
                 doorOpened = true;
                 coll.isTrigger = true;
+                
             }
         }
         
@@ -41,6 +43,7 @@ public class KeytoDoor : MonoBehaviour
             if(doorOpened)
             {
                 Destroy(collision.gameObject);
+                
             }
         }
     }

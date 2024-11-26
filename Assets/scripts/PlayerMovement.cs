@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -8,11 +9,15 @@ public class PlayerMovement : MonoBehaviour
     private SpriteRenderer sprite;
     private BoxCollider2D coll;
     private Animator anim;
-    private float dirX = 0f;
+    private float dirX;
 
-   [SerializeField] private LayerMask jumpableGround;
-   [SerializeField] private float moveSpeed = 7f;
-   [SerializeField] private float jumpForce = 7f;
+    [SerializeField] private LayerMask jumpableGround;
+    [SerializeField] private float moveSpeed = 8f;
+    [SerializeField] private float jumpForce = 7f;
+    // [SerializeField] private float acceleration = 3f;
+    // [SerializeField] private float deceleration = 2f;
+    private float fallGravityScale = 17f;
+    private float jumpGravityScale = 5f;
 
     [SerializeField] private AudioSource jumpSoundEffect;
    private void Start()
@@ -21,25 +26,53 @@ public class PlayerMovement : MonoBehaviour
         anim = GetComponent<Animator>();
         sprite = GetComponent<SpriteRenderer>();
         coll = GetComponent<BoxCollider2D>();
+        rb.gravityScale = jumpGravityScale;
     }
-
-    
     private void Update()
     {
+        
         dirX = Input.GetAxisRaw("Horizontal");
-       
         rb.velocity = new Vector2(dirX * moveSpeed, rb.velocity.y);
-       
+
         if (Input.GetButtonDown("Jump") && IsGrounded())
         {
+            rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
             jumpSoundEffect.Play();
-            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+           if(rb.velocity.y < 0) 
+           {
+                rb.gravityScale = fallGravityScale;
+                
+           }
+            else if (rb.velocity.y > 0 && !Input.GetButton("Jump")) 
+            {
+                rb.gravityScale = fallGravityScale;
+                
+            }
+            else
+            {
+                rb.gravityScale = jumpGravityScale;
+                
+            } 
+        }   
+        UpdateAnimationState();
+    }
+    /* void FixedUpdate()
+    {
+        if (moveDirection != Vector2.zero) // Hareket varsa hýzlandýr
+        {
+            currentSpeed += acceleration * Time.fixedDeltaTime;
+        }
+        else // Hareket yoksa yavaþlat
+        {
+            currentSpeed -= deceleration * Time.fixedDeltaTime;
         }
 
-        UpdateAnimationState();
+        // Hýzý sýnýrlandýr
+        currentSpeed = Mathf.Clamp(currentSpeed, 0, moveSpeed);
 
-    }
-
+        // Hareketi uygulama
+        rb.velocity = moveDirection * currentSpeed; 
+    } */
     private void UpdateAnimationState()
     {
         if(dirX > 0f)

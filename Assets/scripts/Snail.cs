@@ -12,7 +12,7 @@ public class Snail : MonoBehaviour
     private SpriteRenderer sprite;
     private bool isMoving = true;
     private Rigidbody2D rb;
-
+    private PlayerLife playerlife;
     private void Start()
     {
         sprite = GetComponent<SpriteRenderer>();
@@ -58,6 +58,7 @@ public class Snail : MonoBehaviour
             
             if (contactPoint.y > center.y)
             {
+                playerlife.AboveSnail();
                 isMoving = false;
                 StopEnemy();
                 animator.SetBool("isDefeated", true); 

@@ -22,6 +22,7 @@ public class Finish : MonoBehaviour
         levelFinished = true;
         winSoundEffect.Play();
         anim.SetBool("coinsCollected", true);
+        Debug.Log("flag is waving.");
 
     }
     private void OnTriggerEnter2D(Collider2D collision)
@@ -31,6 +32,7 @@ public class Finish : MonoBehaviour
             if (levelFinished)
             {
                 Invoke("StartNextLevel", 2f);
+                Debug.Log("starting next level now...");
             }
         }
     }

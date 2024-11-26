@@ -139,7 +139,7 @@ MonoBehaviour:
   jumpableGround:
     serializedVersion: 2
     m_Bits: 64
-  moveSpeed: 7
+  moveSpeed: 8
   jumpForce: 7
   jumpSoundEffect: {fileID: 7947704362226593305}
 --- !u!95 &6768962721963615411

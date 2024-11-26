@@ -16,31 +16,40 @@ public class ItemCollector : MonoBehaviour
     private bool coinsCollected = false;
     public bool keyCollected = false;
 
+    public void IncreaseGoldCoinCount()
+    {
+        collectSoundEffect.Play();
+        goldCoins++;
+        if (goldCoinsText != null)
+        {
+            goldCoinsText.text = "Gold Coins Collected: " + goldCoins;
+        }
+        if (goldCoins >= 17)
+        {
+            coinsCollected = true;
+            goldCoinsText.text = "You completed this level!";  //çalýþýyor
+        }
+    }
+
+    private void Update()
+    {
+        if (coinsCollected)
+        {
+            finish.FinishLevel(); 
+        }
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("GoldCoin"))
         {
-            collectSoundEffect.Play();
             Destroy(collision.gameObject);
-            goldCoins++;
-            if (goldCoinsText != null)
-            {
-                goldCoinsText.text = "Gold Coins Collected: " + goldCoins;
-            }
-            if(goldCoins >= 17)
-            {
-                coinsCollected = true;
-                goldCoinsText.text = "You completed this level!";
-            }
-           if(coinsCollected)
-            {
-                finish.FinishLevel();
-            }
+            IncreaseGoldCoinCount();
         }
         if(collision.gameObject.CompareTag("key"))
         {
             Destroy(collision.gameObject);
             keyCollected = true;
+            
         }
     }
  
