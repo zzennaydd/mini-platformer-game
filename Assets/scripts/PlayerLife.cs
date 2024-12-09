@@ -74,7 +74,7 @@ public class PlayerLife : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
-    public void AboveSnail()
+    public void AboveSnailOrSlime()
     {
         anim.SetBool("enemyHitting", false);
         health++;

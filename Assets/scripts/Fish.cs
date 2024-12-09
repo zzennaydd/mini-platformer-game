@@ -12,7 +12,7 @@ public class Fish : MonoBehaviour
     private SpriteRenderer sprite;
     private void Start()
     {
-        sprite = gameObject.GetComponent<SpriteRenderer>();
+        sprite = GetComponent<SpriteRenderer>();
     }
     private void Update()
     {
