@@ -1364,6 +1364,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2680960966653147696, guid: 87c4890789232df47ace181abd0044c3, type: 3}
   m_PrefabInstance: {fileID: 420160397}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &420457824 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6617492857965205026, guid: c87c9537127c68a4d85b2df5f11250c2, type: 3}
+  m_PrefabInstance: {fileID: 1486629285}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &467706113
 GameObject:
   m_ObjectHideFlags: 0
@@ -3323,7 +3328,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1183073275}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 90eae78e8ce85a849b5b0ca11b2de641, type: 3}
@@ -3736,6 +3741,10 @@ PrefabInstance:
       propertyPath: goldCoinsText
       value: 
       objectReference: {fileID: 858489252}
+    - target: {fileID: 6814522682936210271, guid: c87c9537127c68a4d85b2df5f11250c2, type: 3}
+      propertyPath: groundCheckPos
+      value: 
+      objectReference: {fileID: 420457824}
     - target: {fileID: 9065295488121512703, guid: c87c9537127c68a4d85b2df5f11250c2, type: 3}
       propertyPath: m_Name
       value: Player

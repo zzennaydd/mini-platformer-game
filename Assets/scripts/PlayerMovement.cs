@@ -11,13 +11,15 @@ public class PlayerMovement : MonoBehaviour
     private Animator anim;
     private float dirX;
 
+    [Header("Ground Check")]
+    [SerializeField] private Transform groundCheckPos;
+    public Vector2 groundCheckSize = new Vector2(0.5f, 0.05f);
     [SerializeField] private LayerMask jumpableGround;
+
     [SerializeField] private float moveSpeed = 8f;
     [SerializeField] private float jumpForce = 7f;
-    // [SerializeField] private float acceleration = 3f;
-    // [SerializeField] private float deceleration = 2f;
-    private float fallGravityScale = 17f;
-    private float jumpGravityScale = 5f;
+    private int maxJumps = 2;
+    private int jumpsRemaining;
 
     [SerializeField] private AudioSource jumpSoundEffect;
    private void Start()
@@ -26,53 +28,41 @@ public class PlayerMovement : MonoBehaviour
         anim = GetComponent<Animator>();
         sprite = GetComponent<SpriteRenderer>();
         coll = GetComponent<BoxCollider2D>();
-        rb.gravityScale = jumpGravityScale;
     }
     private void Update()
     {
         
         dirX = Input.GetAxisRaw("Horizontal");
         rb.velocity = new Vector2(dirX * moveSpeed, rb.velocity.y);
-
-        if (Input.GetButtonDown("Jump") && IsGrounded())
-        {
-            rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
-            jumpSoundEffect.Play();
-           if(rb.velocity.y < 0) 
-           {
-                rb.gravityScale = fallGravityScale;
-                
-           }
-            else if (rb.velocity.y > 0 && !Input.GetButton("Jump")) 
-            {
-                rb.gravityScale = fallGravityScale;
-                
-            }
-            else
-            {
-                rb.gravityScale = jumpGravityScale;
-                
-            } 
-        }   
+        Jump();
+        GroundCheck();
         UpdateAnimationState();
+        OnDrawGizmosSelected();
     }
-    /* void FixedUpdate()
+    private void OnDrawGizmosSelected()
     {
-        if (moveDirection != Vector2.zero) // Hareket varsa hýzlandýr
-        {
-            currentSpeed += acceleration * Time.fixedDeltaTime;
-        }
-        else // Hareket yoksa yavaþlat
-        {
-            currentSpeed -= deceleration * Time.fixedDeltaTime;
-        }
+        Gizmos.color = Color.white;
+        Gizmos.DrawWireCube(groundCheckPos.position, groundCheckSize);
+    }
 
-        // Hýzý sýnýrlandýr
-        currentSpeed = Mathf.Clamp(currentSpeed, 0, moveSpeed);
-
-        // Hareketi uygulama
-        rb.velocity = moveDirection * currentSpeed; 
-    } */
+    private void Jump()
+    {
+        if (jumpsRemaining > 0)
+        {
+            if (Input.GetButtonDown("Jump"))
+            {
+                rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+                jumpSoundEffect.Play();
+                jumpsRemaining--;
+            }
+            if (Input.GetButtonUp("Jump"))
+            {
+                rb.AddForce(Vector2.up * 0.5f, ForceMode2D.Impulse);
+                
+                jumpsRemaining--;
+            }
+        }
+    }
     private void UpdateAnimationState()
     {
         if(dirX > 0f)
@@ -103,8 +93,12 @@ public class PlayerMovement : MonoBehaviour
         
     }
 
-    private bool IsGrounded()
+    private void GroundCheck()
     {
-        return Physics2D.BoxCast(coll.bounds.center, coll.bounds.size, 0f, Vector2.down, .1f,jumpableGround);
+        //  return Physics2D.BoxCast(coll.bounds.center, coll.bounds.size, 0f, Vector2.down, .1f,jumpableGround);
+        if (Physics2D.OverlapBox(groundCheckPos.position, groundCheckSize, 0, jumpableGround))
+        {
+            jumpsRemaining = maxJumps;
+        }
     }
 }
