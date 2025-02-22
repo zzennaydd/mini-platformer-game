@@ -3741,6 +3741,18 @@ PrefabInstance:
       propertyPath: goldCoinsText
       value: 
       objectReference: {fileID: 858489252}
+    - target: {fileID: 5876552363317391108, guid: c87c9537127c68a4d85b2df5f11250c2, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6814522682936210271, guid: c87c9537127c68a4d85b2df5f11250c2, type: 3}
+      propertyPath: jumpForce
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6814522682936210271, guid: c87c9537127c68a4d85b2df5f11250c2, type: 3}
+      propertyPath: maxFallSpeed
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 6814522682936210271, guid: c87c9537127c68a4d85b2df5f11250c2, type: 3}
       propertyPath: groundCheckPos
       value: 

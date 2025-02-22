@@ -145,7 +145,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 5654e863f259bef4cb9ef514637cb2dd, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -173,8 +173,11 @@ MonoBehaviour:
   jumpableGround:
     serializedVersion: 2
     m_Bits: 64
+  baseGravity: 1.5
+  maxFallSpeed: 20
+  fallSpeedMultiplier: 2
   moveSpeed: 8
-  jumpForce: 7
+  jumpForce: 8
   jumpSoundEffect: {fileID: 7947704362226593305}
 --- !u!95 &6768962721963615411
 Animator:

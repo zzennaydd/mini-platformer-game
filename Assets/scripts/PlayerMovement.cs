@@ -7,7 +7,7 @@ public class PlayerMovement : MonoBehaviour
 {
     private Rigidbody2D rb;
     private SpriteRenderer sprite;
-    private BoxCollider2D coll;
+   // private BoxCollider2D coll;
     private Animator anim;
     private float dirX;
 
@@ -16,8 +16,14 @@ public class PlayerMovement : MonoBehaviour
     public Vector2 groundCheckSize = new Vector2(0.5f, 0.05f);
     [SerializeField] private LayerMask jumpableGround;
 
+    [Header("Gravity")]
+    public float baseGravity = 1.5f;
+    public float maxFallSpeed = 18f;
+    public float fallSpeedMultiplier = 2f;
+
+
     [SerializeField] private float moveSpeed = 8f;
-    [SerializeField] private float jumpForce = 7f;
+    [SerializeField] private float jumpForce = 8f;
     private int maxJumps = 2;
     private int jumpsRemaining;
 
@@ -27,7 +33,7 @@ public class PlayerMovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         sprite = GetComponent<SpriteRenderer>();
-        coll = GetComponent<BoxCollider2D>();
+        //coll = GetComponent<BoxCollider2D>();
     }
     private void Update()
     {
@@ -37,7 +43,23 @@ public class PlayerMovement : MonoBehaviour
         Jump();
         GroundCheck();
         UpdateAnimationState();
-        OnDrawGizmosSelected();
+        
+    }
+    private void FixedUpdate()
+    {
+        Gravity();
+    }
+    private void Gravity()
+    {
+        if(rb.velocity.y < 0)
+        {
+            rb.gravityScale = baseGravity * fallSpeedMultiplier;
+            rb.velocity = new Vector2(rb.velocity.x, Mathf.Max(rb.velocity.y, -maxFallSpeed));
+        }
+        else
+        {
+            rb.gravityScale = baseGravity;
+        }
     }
     private void OnDrawGizmosSelected()
     {
