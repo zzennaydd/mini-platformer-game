@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7f43b2c6de318464e9744d7645194e01, type: 3}
-  m_Name: FishData
+  m_Name: MouseData
   m_EditorClassIdentifier: 
-  speed: 6
-  sprite: {fileID: 21300000, guid: 13847e6777f5d904794c7b9569fdf845, type: 3}
+  speed: 7
+  sprite: {fileID: 21300000, guid: 137225d37b7e7c74da66d3fbd6b4862e, type: 3}
