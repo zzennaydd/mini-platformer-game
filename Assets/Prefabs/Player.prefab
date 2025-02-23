@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 6539511994072360269}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.9, z: 0}
+  m_LocalPosition: {x: -0.022, y: -0.943, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -169,7 +169,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   groundCheckPos: {fileID: 6617492857965205026}
-  groundCheckSize: {x: 0.5, y: 0.05}
+  groundCheckSize: {x: 0.7, y: 0.05}
   jumpableGround:
     serializedVersion: 2
     m_Bits: 64

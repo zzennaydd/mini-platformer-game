@@ -4,16 +4,20 @@ using UnityEngine;
 
 public class Bee : MonoBehaviour
 {
+    [SerializeField] private DumbEnemy dumbEnemy;
+
     [SerializeField] private GameObject[] waypoints;
     private int currentWaypointIndex = 0;
 
-    [SerializeField] private float speed = 8f;
-
+    // [SerializeField] private float speed = 8f;
+    private float speed;
+    private Sprite icon;
     private SpriteRenderer sprite;
-
     private void Start()
     {
         sprite = GetComponent<SpriteRenderer>();
+        icon = dumbEnemy.sprite;
+        speed = dumbEnemy.speed;
     }
 
     private void Update()
