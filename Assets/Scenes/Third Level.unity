@@ -202,10 +202,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcb8aa36b47660441b1293cd190d12e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dumbEnemy: {fileID: 11400000, guid: 19f10c5ad08df964a8c79cc820d22cac, type: 2}
   waypoints:
   - {fileID: 1754011548}
   - {fileID: 1432641942}
-  speed: 8
 --- !u!212 &26778871
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -359,10 +359,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcb8aa36b47660441b1293cd190d12e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dumbEnemy: {fileID: 11400000, guid: 19f10c5ad08df964a8c79cc820d22cac, type: 2}
   waypoints:
   - {fileID: 445263672}
   - {fileID: 1650382649}
-  speed: 8
 --- !u!212 &129254745
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1276,10 +1276,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcb8aa36b47660441b1293cd190d12e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dumbEnemy: {fileID: 11400000, guid: 19f10c5ad08df964a8c79cc820d22cac, type: 2}
   waypoints:
   - {fileID: 1248214788}
   - {fileID: 2015349327}
-  speed: 8
 --- !u!1001 &717717707
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1546,10 +1546,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcb8aa36b47660441b1293cd190d12e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dumbEnemy: {fileID: 11400000, guid: 19f10c5ad08df964a8c79cc820d22cac, type: 2}
   waypoints:
   - {fileID: 333757188}
   - {fileID: 1482472664}
-  speed: 8
 --- !u!212 &912245470
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1954,10 +1954,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcb8aa36b47660441b1293cd190d12e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dumbEnemy: {fileID: 11400000, guid: ad816e3cd44aa2c4ca7a2d6bd197beb9, type: 2}
   waypoints:
   - {fileID: 518834194}
   - {fileID: 1144616863}
-  speed: 8
 --- !u!212 &1052009208
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2228,10 +2228,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcb8aa36b47660441b1293cd190d12e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dumbEnemy: {fileID: 11400000, guid: 19f10c5ad08df964a8c79cc820d22cac, type: 2}
   waypoints:
   - {fileID: 1935262111}
   - {fileID: 494858895}
-  speed: 8
 --- !u!212 &1118137093
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2391,10 +2391,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcb8aa36b47660441b1293cd190d12e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dumbEnemy: {fileID: 11400000, guid: 19f10c5ad08df964a8c79cc820d22cac, type: 2}
   waypoints:
   - {fileID: 186671989}
   - {fileID: 1034605407}
-  speed: 8
 --- !u!212 &1126248915
 SpriteRenderer:
   m_ObjectHideFlags: 0

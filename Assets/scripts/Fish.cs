@@ -4,15 +4,18 @@ using UnityEngine;
 
 public class Fish : MonoBehaviour
 {
+    [SerializeField] private DumbEnemy dumbEnemy;
     [SerializeField] private GameObject[] waypoints;
     private int currentWaypointIndex = 0;
 
-    [SerializeField] private float speed = 10f;
-
+    private float speed;
+    private Sprite icon;
     private SpriteRenderer sprite;
     private void Start()
     {
         sprite = GetComponent<SpriteRenderer>();
+        speed = dumbEnemy.speed;
+        icon = dumbEnemy.sprite;
     }
     private void Update()
     {

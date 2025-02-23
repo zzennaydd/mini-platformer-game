@@ -4081,6 +4081,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a30e84bf864d2c144bf3d46c0c8cab15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dumbEnemy: {fileID: 11400000, guid: ad816e3cd44aa2c4ca7a2d6bd197beb9, type: 2}
   waypoints:
   - {fileID: 2028824978}
   - {fileID: 201328972}
