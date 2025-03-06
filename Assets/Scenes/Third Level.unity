@@ -168,6 +168,8 @@ GameObject:
   - component: {fileID: 26778869}
   - component: {fileID: 26778871}
   - component: {fileID: 26778870}
+  - component: {fileID: 26778873}
+  - component: {fileID: 26778872}
   m_Layer: 0
   m_Name: fish
   m_TagString: enemy
@@ -175,21 +177,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &26778869
-Transform:
+--- !u!224 &26778869
+RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 26778868}
-  serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -39.25, y: -0.12, z: -0.048609555}
+  m_LocalPosition: {x: 0, y: 0, z: -0.048609555}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1063519872}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -39.25, y: -0.12}
+  m_SizeDelta: {x: 1.28, y: 1.28}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &26778870
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -258,6 +264,59 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &26778872
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 26778868}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.004524231, y: 0.036202252}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.28, y: 1.28}
+    newSize: {x: 1.28, y: 1.28}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.9089279, y: 1.2075955}
+  m_EdgeRadius: 0
+--- !u!222 &26778873
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 26778868}
+  m_CullTransparentMesh: 1
 --- !u!1 &75186021
 GameObject:
   m_ObjectHideFlags: 0
@@ -325,6 +384,7 @@ GameObject:
   - component: {fileID: 129254743}
   - component: {fileID: 129254745}
   - component: {fileID: 129254744}
+  - component: {fileID: 129254746}
   m_Layer: 0
   m_Name: fish
   m_TagString: enemy
@@ -415,6 +475,51 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &129254746
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 129254742}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.015463829, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.28, y: 1.28}
+    newSize: {x: 1.28, y: 1.28}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.9397774, y: 1.28}
+  m_EdgeRadius: 0
 --- !u!1 &175397933
 GameObject:
   m_ObjectHideFlags: 0
@@ -1190,6 +1295,7 @@ GameObject:
   - component: {fileID: 651024982}
   - component: {fileID: 651024983}
   - component: {fileID: 651024984}
+  - component: {fileID: 651024985}
   m_Layer: 0
   m_Name: fish
   m_TagString: enemy
@@ -1280,6 +1386,51 @@ MonoBehaviour:
   waypoints:
   - {fileID: 1248214788}
   - {fileID: 2015349327}
+--- !u!61 &651024985
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 651024981}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.28, y: 1.28}
+    newSize: {x: 1.28, y: 1.28}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.0564804, y: 1.28}
+  m_EdgeRadius: 0
 --- !u!1001 &717717707
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1314,11 +1465,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2200573475792648397, guid: dc16ae654970a5f40b6263efa898f29e, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 40.6831
+      value: 75.5178
       objectReference: {fileID: 0}
     - target: {fileID: 2200573475792648397, guid: dc16ae654970a5f40b6263efa898f29e, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 42.0953
+      value: 79.0672
       objectReference: {fileID: 0}
     - target: {fileID: 2200573475792648397, guid: dc16ae654970a5f40b6263efa898f29e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1350,11 +1501,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2200573475792648397, guid: dc16ae654970a5f40b6263efa898f29e, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -415.46
+      value: -922.23914
       objectReference: {fileID: 0}
     - target: {fileID: 2200573475792648397, guid: dc16ae654970a5f40b6263efa898f29e, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 175.5
+      value: 500.47037
       objectReference: {fileID: 0}
     - target: {fileID: 2200573475792648397, guid: dc16ae654970a5f40b6263efa898f29e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1382,6 +1533,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 2200573475792648397, guid: dc16ae654970a5f40b6263efa898f29e, type: 3}
   m_PrefabInstance: {fileID: 717717707}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &717717709 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4409943075935508135, guid: dc16ae654970a5f40b6263efa898f29e, type: 3}
+  m_PrefabInstance: {fileID: 717717707}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &753565125
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1512,6 +1674,7 @@ GameObject:
   - component: {fileID: 912245468}
   - component: {fileID: 912245470}
   - component: {fileID: 912245469}
+  - component: {fileID: 912245471}
   m_Layer: 0
   m_Name: fish
   m_TagString: enemy
@@ -1602,6 +1765,51 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &912245471
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 912245467}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.28, y: 1.28}
+    newSize: {x: 1.28, y: 1.28}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.93977356, y: 1.28}
+  m_EdgeRadius: 0
 --- !u!1001 &913399106
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1920,6 +2128,7 @@ GameObject:
   - component: {fileID: 1052009206}
   - component: {fileID: 1052009208}
   - component: {fileID: 1052009207}
+  - component: {fileID: 1052009209}
   m_Layer: 0
   m_Name: fish
   m_TagString: enemy
@@ -2010,6 +2219,51 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1052009209
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1052009205}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.007732868, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.28, y: 1.28}
+    newSize: {x: 1.28, y: 1.28}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.98617077, y: 1.28}
+  m_EdgeRadius: 0
 --- !u!1 &1063519871
 GameObject:
   m_ObjectHideFlags: 0
@@ -2194,6 +2448,7 @@ GameObject:
   - component: {fileID: 1118137091}
   - component: {fileID: 1118137093}
   - component: {fileID: 1118137092}
+  - component: {fileID: 1118137094}
   m_Layer: 0
   m_Name: fish
   m_TagString: enemy
@@ -2284,6 +2539,51 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1118137094
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1118137090}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.020467758, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.28, y: 1.28}
+    newSize: {x: 1.28, y: 1.28}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.9934349, y: 1.28}
+  m_EdgeRadius: 0
 --- !u!1001 &1120556995
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2357,6 +2657,7 @@ GameObject:
   - component: {fileID: 1126248913}
   - component: {fileID: 1126248915}
   - component: {fileID: 1126248914}
+  - component: {fileID: 1126248916}
   m_Layer: 0
   m_Name: fish
   m_TagString: enemy
@@ -2447,6 +2748,51 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1126248916
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1126248912}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0077314377, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.28, y: 1.28}
+    newSize: {x: 1.28, y: 1.28}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.86245155, y: 1.28}
+  m_EdgeRadius: 0
 --- !u!1 &1144616863
 GameObject:
   m_ObjectHideFlags: 0
@@ -6359,11 +6705,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1935583282824405548, guid: 597f2f7719daf3342b9c88bd0aadeb65, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 40.6831
+      value: 70.6929
       objectReference: {fileID: 0}
     - target: {fileID: 1935583282824405548, guid: 597f2f7719daf3342b9c88bd0aadeb65, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 42.0953
+      value: 79.068
       objectReference: {fileID: 0}
     - target: {fileID: 1935583282824405548, guid: 597f2f7719daf3342b9c88bd0aadeb65, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6395,11 +6741,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1935583282824405548, guid: 597f2f7719daf3342b9c88bd0aadeb65, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -382.5
+      value: -854.7999
       objectReference: {fileID: 0}
     - target: {fileID: 1935583282824405548, guid: 597f2f7719daf3342b9c88bd0aadeb65, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 175.5
+      value: 500.47
       objectReference: {fileID: 0}
     - target: {fileID: 1935583282824405548, guid: 597f2f7719daf3342b9c88bd0aadeb65, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -6427,6 +6773,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 1935583282824405548, guid: 597f2f7719daf3342b9c88bd0aadeb65, type: 3}
   m_PrefabInstance: {fileID: 1884217144}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1884217146 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5330381414554936630, guid: 597f2f7719daf3342b9c88bd0aadeb65, type: 3}
+  m_PrefabInstance: {fileID: 1884217144}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1935262111
 GameObject:
   m_ObjectHideFlags: 0
@@ -6466,6 +6823,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 93168721556117971, guid: c87c9537127c68a4d85b2df5f11250c2, type: 3}
+      propertyPath: healthImages.Array.data[0]
+      value: 
+      objectReference: {fileID: 717717709}
+    - target: {fileID: 93168721556117971, guid: c87c9537127c68a4d85b2df5f11250c2, type: 3}
+      propertyPath: healthImages.Array.data[1]
+      value: 
+      objectReference: {fileID: 1884217146}
+    - target: {fileID: 93168721556117971, guid: c87c9537127c68a4d85b2df5f11250c2, type: 3}
+      propertyPath: healthImages.Array.data[2]
+      value: 
+      objectReference: {fileID: 2103009586}
     - target: {fileID: 280442536120771799, guid: c87c9537127c68a4d85b2df5f11250c2, type: 3}
       propertyPath: door
       value: 
@@ -6803,11 +7172,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1226185447811244020, guid: ce3c06478aa736a45bf680295ddcb9ca, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 40.6831
+      value: 70.0423
       objectReference: {fileID: 0}
     - target: {fileID: 1226185447811244020, guid: ce3c06478aa736a45bf680295ddcb9ca, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 42.0953
+      value: 79.067
       objectReference: {fileID: 0}
     - target: {fileID: 1226185447811244020, guid: ce3c06478aa736a45bf680295ddcb9ca, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6839,11 +7208,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1226185447811244020, guid: ce3c06478aa736a45bf680295ddcb9ca, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -349.1
+      value: -792.26904
       objectReference: {fileID: 0}
     - target: {fileID: 1226185447811244020, guid: ce3c06478aa736a45bf680295ddcb9ca, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 175.5
+      value: 500.47012
       objectReference: {fileID: 0}
     - target: {fileID: 1226185447811244020, guid: ce3c06478aa736a45bf680295ddcb9ca, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -6871,6 +7240,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 1226185447811244020, guid: ce3c06478aa736a45bf680295ddcb9ca, type: 3}
   m_PrefabInstance: {fileID: 2103009584}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2103009586 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1042554021343788574, guid: ce3c06478aa736a45bf680295ddcb9ca, type: 3}
+  m_PrefabInstance: {fileID: 2103009584}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2137644956
 GameObject:
   m_ObjectHideFlags: 0
