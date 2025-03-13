@@ -1602,7 +1602,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 264dece07d1a57442886d1b52cfabcb6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dumbEnemy: {fileID: 0}
+  dumbEnemy: {fileID: 11400000, guid: e0d3d1f7eaf99b140a2500a3d79429ed, type: 2}
   waypoints:
   - {fileID: 327036588}
   - {fileID: 49397305}
@@ -7406,7 +7406,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a30e84bf864d2c144bf3d46c0c8cab15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dumbEnemy: {fileID: 0}
+  dumbEnemy: {fileID: 11400000, guid: 44aae3546ee2e85438c0fa149983511c, type: 2}
   waypoints:
   - {fileID: 1269038505}
   - {fileID: 1167581980}
