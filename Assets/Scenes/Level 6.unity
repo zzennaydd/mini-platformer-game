@@ -348,7 +348,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 35207175}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: waypoint (1)
   m_TagString: Untagged
   m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
@@ -519,7 +519,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 61847438}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: movingPlatform (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -637,6 +637,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 59803c5f596822e4f9442e6b8acac060, type: 3}
+--- !u!1 &63509293 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7948314584153020944, guid: 59803c5f596822e4f9442e6b8acac060, type: 3}
+  m_PrefabInstance: {fileID: 63509292}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &70976915
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -883,7 +888,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 147223308}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: waypoint
   m_TagString: Untagged
   m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
@@ -1060,7 +1065,7 @@ GameObject:
   - component: {fileID: 260686851}
   - component: {fileID: 260686850}
   - component: {fileID: 260686849}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: movingPlatform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1286,7 +1291,7 @@ GameObject:
   - component: {fileID: 265215647}
   - component: {fileID: 265215646}
   - component: {fileID: 265215645}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: movingPlatform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1883,6 +1888,7 @@ GameObject:
   - component: {fileID: 377920277}
   - component: {fileID: 377920276}
   - component: {fileID: 377920279}
+  - component: {fileID: 377920280}
   m_Layer: 0
   m_Name: barnacle (1)
   m_TagString: enemy
@@ -1993,6 +1999,51 @@ MonoBehaviour:
   moveAmount: 1
   interval: 2
   speed: 2
+--- !u!61 &377920280
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 377920275}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.0037708282, y: -0.11688882}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.28, y: 1.28}
+    newSize: {x: 1.28, y: 1.28}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.94818497, y: 1.0462223}
+  m_EdgeRadius: 0
 --- !u!1001 &401595230
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2209,7 +2260,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 445502182}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: movingPlatform (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2887,6 +2938,7 @@ GameObject:
   - component: {fileID: 580020533}
   - component: {fileID: 580020535}
   - component: {fileID: 580020536}
+  - component: {fileID: 580020537}
   m_Layer: 0
   m_Name: barnacle
   m_TagString: enemy
@@ -2955,7 +3007,7 @@ Transform:
   m_GameObject: {fileID: 580020532}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 15.17, y: 8.61, z: 0}
+  m_LocalPosition: {x: 15.17, y: 8.576, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2997,6 +3049,51 @@ MonoBehaviour:
   moveAmount: 1
   interval: 2
   speed: 2
+--- !u!61 &580020537
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 580020532}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.00000047683716, y: -0.11688882}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.28, y: 1.28}
+    newSize: {x: 1.28, y: 1.28}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.9331045, y: 1.0462223}
+  m_EdgeRadius: 0
 --- !u!1 &588581369
 GameObject:
   m_ObjectHideFlags: 0
@@ -3006,7 +3103,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 588581370}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: waypoint
   m_TagString: Untagged
   m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
@@ -3120,7 +3217,7 @@ GameObject:
   - component: {fileID: 599932335}
   - component: {fileID: 599932334}
   - component: {fileID: 599932333}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: movingPlatform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3402,7 +3499,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 622517591}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: waypoint (1)
   m_TagString: Untagged
   m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
@@ -3602,7 +3699,7 @@ GameObject:
   - component: {fileID: 725168513}
   - component: {fileID: 725168512}
   - component: {fileID: 725168511}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: movingPlatform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3822,7 +3919,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 728358297}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: waypoint (1)
   m_TagString: Untagged
   m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
@@ -3932,7 +4029,7 @@ GameObject:
   - component: {fileID: 792712000}
   - component: {fileID: 792711999}
   - component: {fileID: 792711998}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: movingPlatform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4222,7 +4319,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 928251323}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: movingPlatform (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4399,6 +4496,7 @@ GameObject:
   - component: {fileID: 977815093}
   - component: {fileID: 977815092}
   - component: {fileID: 977815095}
+  - component: {fileID: 977815096}
   m_Layer: 0
   m_Name: barnacle (2)
   m_TagString: enemy
@@ -4509,6 +4607,51 @@ MonoBehaviour:
   moveAmount: 1
   interval: 2
   speed: 2
+--- !u!61 &977815096
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 977815091}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0037708282, y: -0.111233056}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.28, y: 1.28}
+    newSize: {x: 1.28, y: 1.28}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.93310165, y: 1.0575339}
+  m_EdgeRadius: 0
 --- !u!1001 &980784120
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4701,7 +4844,7 @@ GameObject:
   - component: {fileID: 1019116943}
   - component: {fileID: 1019116942}
   - component: {fileID: 1019116941}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: movingPlatform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5053,7 +5196,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1064349223}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: movingPlatform (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5087,7 +5230,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1067638683}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: waypoint (1)
   m_TagString: Untagged
   m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
@@ -5986,7 +6129,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56dc82d56e66ee94cb68058e5c249a87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pauseMenu: {fileID: 0}
+  pauseMenu: {fileID: 1284509346}
 --- !u!1001 &1311219129
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6066,7 +6209,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1334711495}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: waypoint (1)
   m_TagString: Untagged
   m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
@@ -6199,7 +6342,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1370894835}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: waypoint
   m_TagString: Untagged
   m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
@@ -6443,6 +6586,14 @@ PrefabInstance:
       propertyPath: healthImages.Array.data[2]
       value: 
       objectReference: {fileID: 70976917}
+    - target: {fileID: 280442536120771799, guid: c87c9537127c68a4d85b2df5f11250c2, type: 3}
+      propertyPath: key
+      value: 
+      objectReference: {fileID: 1833163445}
+    - target: {fileID: 280442536120771799, guid: c87c9537127c68a4d85b2df5f11250c2, type: 3}
+      propertyPath: door
+      value: 
+      objectReference: {fileID: 63509293}
     - target: {fileID: 1449623519798868016, guid: c87c9537127c68a4d85b2df5f11250c2, type: 3}
       propertyPath: m_LocalPosition.x
       value: -33.71
@@ -6540,7 +6691,7 @@ GameObject:
   - component: {fileID: 1504831264}
   - component: {fileID: 1504831263}
   - component: {fileID: 1504831262}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: movingPlatform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7322,7 +7473,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1595537856}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: waypoint
   m_TagString: Untagged
   m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
@@ -7423,7 +7574,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1640414555}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: movingPlatform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7806,7 +7957,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1724858238}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: waypoint (1)
   m_TagString: Untagged
   m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
@@ -7837,7 +7988,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1725590462}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: movingPlatform (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11769,7 +11920,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1830725789}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: waypoint
   m_TagString: Untagged
   m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
@@ -11856,6 +12007,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bded143b61b1d7c428903f674d08d1c5, type: 3}
+--- !u!1 &1833163445 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3374410139592738859, guid: bded143b61b1d7c428903f674d08d1c5, type: 3}
+  m_PrefabInstance: {fileID: 1833163444}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1841099192
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11935,7 +12091,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1846079167}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: waypoint (1)
   m_TagString: Untagged
   m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
@@ -11966,7 +12122,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1852334902}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: waypoint
   m_TagString: Untagged
   m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
@@ -12269,7 +12425,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1898119985}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: movingPlatform (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12505,7 +12661,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1984623020}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: waypoint
   m_TagString: Untagged
   m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
@@ -12850,6 +13006,7 @@ GameObject:
   - component: {fileID: 2143853110}
   - component: {fileID: 2143853109}
   - component: {fileID: 2143853108}
+  - component: {fileID: 2143853112}
   m_Layer: 0
   m_Name: barnacle (3)
   m_TagString: enemy
@@ -12954,12 +13111,57 @@ Transform:
   m_GameObject: {fileID: 2143853107}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.52, y: 14.56, z: 0}
+  m_LocalPosition: {x: -8.52, y: 14.521, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &2143853112
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2143853107}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0138549805, y: -0.101599514}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.28, y: 1.28}
+    newSize: {x: 1.28, y: 1.28}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.97520065, y: 1.076801}
+  m_EdgeRadius: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -12977,6 +13179,7 @@ SceneRoots:
   - {fileID: 580020534}
   - {fileID: 377920278}
   - {fileID: 977815094}
+  - {fileID: 2143853111}
   - {fileID: 2008705253}
   - {fileID: 1640414555}
   - {fileID: 445502182}
@@ -12985,6 +13188,5 @@ SceneRoots:
   - {fileID: 61847438}
   - {fileID: 928251323}
   - {fileID: 1064349223}
-  - {fileID: 2143853111}
   - {fileID: 2105668860}
   - {fileID: 1723735740}

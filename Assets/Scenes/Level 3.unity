@@ -5842,6 +5842,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bded143b61b1d7c428903f674d08d1c5, type: 3}
+--- !u!1 &753565126 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3374410139592738859, guid: bded143b61b1d7c428903f674d08d1c5, type: 3}
+  m_PrefabInstance: {fileID: 753565125}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &754541714
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7839,7 +7844,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56dc82d56e66ee94cb68058e5c249a87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pauseMenu: {fileID: 0}
+  pauseMenu: {fileID: 1035059579}
 --- !u!1 &1040219706
 GameObject:
   m_ObjectHideFlags: 0
@@ -20617,6 +20622,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2103009586}
     - target: {fileID: 280442536120771799, guid: c87c9537127c68a4d85b2df5f11250c2, type: 3}
+      propertyPath: key
+      value: 
+      objectReference: {fileID: 753565126}
+    - target: {fileID: 280442536120771799, guid: c87c9537127c68a4d85b2df5f11250c2, type: 3}
       propertyPath: door
       value: 
       objectReference: {fileID: 7221370309988238078}
@@ -23013,7 +23022,7 @@ Transform:
   m_GameObject: {fileID: 7221370309988238078}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 42.63, y: -2.46, z: -0.22732843}
+  m_LocalPosition: {x: 42.63, y: -2.27, z: -0.22732843}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

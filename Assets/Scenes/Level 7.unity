@@ -393,6 +393,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 59803c5f596822e4f9442e6b8acac060, type: 3}
+--- !u!1 &63509293 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7948314584153020944, guid: 59803c5f596822e4f9442e6b8acac060, type: 3}
+  m_PrefabInstance: {fileID: 63509292}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &93196655
 GameObject:
   m_ObjectHideFlags: 0
@@ -405,6 +410,7 @@ GameObject:
   - component: {fileID: 93196658}
   - component: {fileID: 93196657}
   - component: {fileID: 93196656}
+  - component: {fileID: 93196660}
   m_Layer: 0
   m_Name: barnacle
   m_TagString: enemy
@@ -509,12 +515,57 @@ Transform:
   m_GameObject: {fileID: 93196655}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 29.88, y: 15.59, z: 0}
+  m_LocalPosition: {x: 29.88, y: 15.537, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &93196660
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 93196655}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.0056552887, y: -0.10746223}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.28, y: 1.28}
+    newSize: {x: 1.28, y: 1.28}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.9519539, y: 1.0650755}
+  m_EdgeRadius: 0
 --- !u!1001 &122031632
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -669,7 +720,7 @@ GameObject:
   - component: {fileID: 158908233}
   - component: {fileID: 158908232}
   - component: {fileID: 158908231}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: movingPlatform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -841,7 +892,7 @@ GameObject:
   m_Component:
   - component: {fileID: 184560149}
   - component: {fileID: 184560150}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: planetHalf_left (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1065,7 +1116,7 @@ GameObject:
   - component: {fileID: 198464492}
   - component: {fileID: 198464491}
   - component: {fileID: 198464490}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: movingPlatform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1297,7 +1348,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 225157546}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: movingPlatform (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1331,7 +1382,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 246330454}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: waypoint (1)
   m_TagString: Untagged
   m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
@@ -1766,7 +1817,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 426821108}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: waypoint
   m_TagString: Untagged
   m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
@@ -1868,7 +1919,7 @@ GameObject:
   m_Component:
   - component: {fileID: 492635744}
   - component: {fileID: 492635745}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: planetHalf_left (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2022,7 +2073,7 @@ GameObject:
   m_Component:
   - component: {fileID: 534816166}
   - component: {fileID: 534816167}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: planetHalf_left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2268,6 +2319,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 7612889053992950438, guid: e77bb3cf5a9d8a64aa3320ef61568731, type: 3}
   m_PrefabInstance: {fileID: 556480068}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &556480070 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7329684254629401157, guid: e77bb3cf5a9d8a64aa3320ef61568731, type: 3}
+  m_PrefabInstance: {fileID: 556480068}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &573541319
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2417,7 +2479,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 604251270}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: movingPlatform (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2652,7 +2714,7 @@ GameObject:
   m_Component:
   - component: {fileID: 777795789}
   - component: {fileID: 777795790}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: planetCliff_right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2735,7 +2797,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 786360988}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: waypoint (1)
   m_TagString: Untagged
   m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
@@ -2797,7 +2859,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 794448447}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: waypoint
   m_TagString: Untagged
   m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
@@ -2899,7 +2961,7 @@ GameObject:
   m_Component:
   - component: {fileID: 857073962}
   - component: {fileID: 857073963}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: planetHalf_left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3057,7 +3119,7 @@ GameObject:
   - component: {fileID: 879196313}
   - component: {fileID: 879196312}
   - component: {fileID: 879196311}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: movingPlatform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4066,7 +4128,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1125523762}
   - component: {fileID: 1125523763}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: planetHalf_left (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4486,7 +4548,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1173348863}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: waypoint
   m_TagString: Untagged
   m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
@@ -4783,7 +4845,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1186137563}
   - component: {fileID: 1186137564}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: planetHalf_left (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4867,7 +4929,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1197119006}
   - component: {fileID: 1197119007}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: planetHalf_left (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5165,7 +5227,7 @@ GameObject:
   - component: {fileID: 1252906192}
   - component: {fileID: 1252906191}
   - component: {fileID: 1252906190}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: movingPlatform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5336,7 +5398,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1255308604}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: movingPlatform (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5373,6 +5435,7 @@ GameObject:
   - component: {fileID: 1264631359}
   - component: {fileID: 1264631358}
   - component: {fileID: 1264631357}
+  - component: {fileID: 1264631361}
   m_Layer: 0
   m_Name: barnacle (1)
   m_TagString: enemy
@@ -5477,12 +5540,57 @@ Transform:
   m_GameObject: {fileID: 1264631356}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 34.55, y: 5.53, z: 0}
+  m_LocalPosition: {x: 34.524, y: 5.53, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1264631361
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1264631356}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.0075416565, y: -0.115003884}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.28, y: 1.28}
+    newSize: {x: 1.28, y: 1.28}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.9406433, y: 1.0499922}
+  m_EdgeRadius: 0
 --- !u!1001 &1291015447
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5754,7 +5862,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1421301827}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: waypoint (1)
   m_TagString: Untagged
   m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
@@ -5785,7 +5893,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1423251583}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: waypoint (1)
   m_TagString: Untagged
   m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
@@ -5886,7 +5994,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1467211467}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: movingPlatform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6071,6 +6179,14 @@ PrefabInstance:
       propertyPath: healthImages.Array.data[2]
       value: 
       objectReference: {fileID: 2044766074}
+    - target: {fileID: 280442536120771799, guid: c87c9537127c68a4d85b2df5f11250c2, type: 3}
+      propertyPath: key
+      value: 
+      objectReference: {fileID: 1833163445}
+    - target: {fileID: 280442536120771799, guid: c87c9537127c68a4d85b2df5f11250c2, type: 3}
+      propertyPath: door
+      value: 
+      objectReference: {fileID: 63509293}
     - target: {fileID: 1449623519798868016, guid: c87c9537127c68a4d85b2df5f11250c2, type: 3}
       propertyPath: m_LocalPosition.x
       value: -32.84
@@ -6118,7 +6234,7 @@ PrefabInstance:
     - target: {fileID: 4957499475332756674, guid: c87c9537127c68a4d85b2df5f11250c2, type: 3}
       propertyPath: goldCoinsText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 556480070}
     - target: {fileID: 5876552363317391108, guid: c87c9537127c68a4d85b2df5f11250c2, type: 3}
       propertyPath: m_Constraints
       value: 4
@@ -6233,7 +6349,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1530314291}
   - component: {fileID: 1530314292}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: planetHalf_left (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6913,7 +7029,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1740210879}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: waypoint
   m_TagString: Untagged
   m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
@@ -9139,6 +9255,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bded143b61b1d7c428903f674d08d1c5, type: 3}
+--- !u!1 &1833163445 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3374410139592738859, guid: bded143b61b1d7c428903f674d08d1c5, type: 3}
+  m_PrefabInstance: {fileID: 1833163444}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1838211781
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9553,7 +9674,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1895246654}
   - component: {fileID: 1895246655}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: planetHalf_left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9777,7 +9898,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2000593818}
   - component: {fileID: 2000593819}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: planetCliff_left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10724,7 +10845,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56dc82d56e66ee94cb68058e5c249a87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pauseMenu: {fileID: 0}
+  pauseMenu: {fileID: 2146401862}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

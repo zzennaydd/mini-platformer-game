@@ -262,7 +262,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7497447}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: waypoint1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
@@ -278,7 +278,7 @@ Transform:
   m_GameObject: {fileID: 7497446}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.41, y: -6.59, z: 0}
+  m_LocalPosition: {x: -2.41, y: -5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -424,7 +424,7 @@ GameObject:
   m_Component:
   - component: {fileID: 14908759}
   - component: {fileID: 14908760}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: snowCliffAlt_right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1074,7 +1074,7 @@ GameObject:
   m_Component:
   - component: {fileID: 92636516}
   - component: {fileID: 92636517}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: snowCliffAlt_left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1418,7 +1418,7 @@ GameObject:
   m_Component:
   - component: {fileID: 197020200}
   - component: {fileID: 197020201}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: snowCliffAlt_left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1594,7 +1594,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 258330618}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: movingPlatform1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1619,6 +1619,11 @@ Transform:
   - {fileID: 2017731424}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &326064237 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7948314584153020944, guid: 59803c5f596822e4f9442e6b8acac060, type: 3}
+  m_PrefabInstance: {fileID: 63509292}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &326328251
 GameObject:
   m_ObjectHideFlags: 0
@@ -1865,7 +1870,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 337104270}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: movingPlatform1 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2482,7 +2487,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 467706114}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: movingPlatform1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3099,7 +3104,7 @@ GameObject:
   m_Component:
   - component: {fileID: 550892161}
   - component: {fileID: 550892162}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: snowCliffAlt_left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4667,7 +4672,7 @@ GameObject:
   m_Component:
   - component: {fileID: 794054306}
   - component: {fileID: 794054307}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: snowCliffAlt_right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4750,7 +4755,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 798529771}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: waypoint1
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
@@ -4782,7 +4787,7 @@ GameObject:
   m_Component:
   - component: {fileID: 805120800}
   - component: {fileID: 805120801}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: snowCliffAlt_right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4870,7 +4875,7 @@ GameObject:
   - component: {fileID: 864285997}
   - component: {fileID: 864285996}
   - component: {fileID: 864286000}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: platform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6072,7 +6077,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1042523373}
   - component: {fileID: 1042523374}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: snowCliffAlt_right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6195,7 +6200,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56dc82d56e66ee94cb68058e5c249a87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pauseMenu: {fileID: 0}
+  pauseMenu: {fileID: 1056075999}
+--- !u!1 &1077168730 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3374410139592738859, guid: bded143b61b1d7c428903f674d08d1c5, type: 3}
+  m_PrefabInstance: {fileID: 1833163444}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1085084272
 GameObject:
   m_ObjectHideFlags: 0
@@ -6244,7 +6254,7 @@ GameObject:
   - component: {fileID: 1109649835}
   - component: {fileID: 1109649834}
   - component: {fileID: 1109649838}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: platform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6741,7 +6751,7 @@ GameObject:
   - component: {fileID: 1173832534}
   - component: {fileID: 1173832533}
   - component: {fileID: 1173832537}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: platform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7306,7 +7316,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1251038325}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: waypoint1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
@@ -7322,7 +7332,7 @@ Transform:
   m_GameObject: {fileID: 1251038324}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.41, y: -6.59, z: 0}
+  m_LocalPosition: {x: -2.41, y: -5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8656,7 +8666,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1450605841}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: waypoint1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
@@ -8672,7 +8682,7 @@ Transform:
   m_GameObject: {fileID: 1450605840}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.41, y: -6.59, z: 0}
+  m_LocalPosition: {x: -2.41, y: -5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8828,6 +8838,14 @@ PrefabInstance:
       propertyPath: healthImages.Array.data[2]
       value: 
       objectReference: {fileID: 2024327327}
+    - target: {fileID: 280442536120771799, guid: c87c9537127c68a4d85b2df5f11250c2, type: 3}
+      propertyPath: key
+      value: 
+      objectReference: {fileID: 1077168730}
+    - target: {fileID: 280442536120771799, guid: c87c9537127c68a4d85b2df5f11250c2, type: 3}
+      propertyPath: door
+      value: 
+      objectReference: {fileID: 326064237}
     - target: {fileID: 1449623519798868016, guid: c87c9537127c68a4d85b2df5f11250c2, type: 3}
       propertyPath: m_LocalPosition.x
       value: -29
@@ -8873,9 +8891,13 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 34238512}
     - target: {fileID: 4957499475332756674, guid: c87c9537127c68a4d85b2df5f11250c2, type: 3}
+      propertyPath: keyCollected
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4957499475332756674, guid: c87c9537127c68a4d85b2df5f11250c2, type: 3}
       propertyPath: goldCoinsText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1892355551}
     - target: {fileID: 5876552363317391108, guid: c87c9537127c68a4d85b2df5f11250c2, type: 3}
       propertyPath: m_Constraints
       value: 4
@@ -9305,7 +9327,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1532629405}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: movingPlatform1 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11164,7 +11186,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1662576694}
   - component: {fileID: 1662576695}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: snowCliffAlt_left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11615,7 +11637,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1744775577}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: waypoint1
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
@@ -14961,7 +14983,7 @@ GameObject:
   - component: {fileID: 1858414784}
   - component: {fileID: 1858414783}
   - component: {fileID: 1858414787}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: platform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15356,6 +15378,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 7612889053992950438, guid: e77bb3cf5a9d8a64aa3320ef61568731, type: 3}
   m_PrefabInstance: {fileID: 1892355549}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1892355551 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7329684254629401157, guid: e77bb3cf5a9d8a64aa3320ef61568731, type: 3}
+  m_PrefabInstance: {fileID: 1892355549}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1896469126
 GameObject:
   m_ObjectHideFlags: 0
@@ -16178,7 +16211,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2017731424}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: waypoint1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
@@ -16194,7 +16227,7 @@ Transform:
   m_GameObject: {fileID: 2017731423}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.41, y: -6.59, z: 0}
+  m_LocalPosition: {x: -2.41, y: -5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -16483,7 +16516,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2036657086}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: waypoint1
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
@@ -17469,7 +17502,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2146518049}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: waypoint1
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}

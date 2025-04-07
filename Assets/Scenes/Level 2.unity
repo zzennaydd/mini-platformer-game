@@ -5258,7 +5258,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56dc82d56e66ee94cb68058e5c249a87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pauseMenu: {fileID: 0}
+  pauseMenu: {fileID: 1048813954}
 --- !u!1001 &1077484084
 PrefabInstance:
   m_ObjectHideFlags: 0

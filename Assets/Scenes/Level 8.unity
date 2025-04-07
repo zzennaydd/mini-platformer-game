@@ -672,6 +672,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 59803c5f596822e4f9442e6b8acac060, type: 3}
+--- !u!1 &63509293 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7948314584153020944, guid: 59803c5f596822e4f9442e6b8acac060, type: 3}
+  m_PrefabInstance: {fileID: 63509292}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &68005175
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -894,6 +899,7 @@ GameObject:
   - component: {fileID: 93196658}
   - component: {fileID: 93196657}
   - component: {fileID: 93196656}
+  - component: {fileID: 93196660}
   m_Layer: 0
   m_Name: barnacle
   m_TagString: enemy
@@ -998,12 +1004,57 @@ Transform:
   m_GameObject: {fileID: 93196655}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -24.414211, y: 0.006298542, z: 0.20689571}
+  m_LocalPosition: {x: -24.414211, y: -0.088, z: 0.20689571}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 630403249}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &93196660
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 93196655}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.011253357, y: -0.108792365}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.28, y: 1.28}
+    newSize: {x: 1.28, y: 1.28}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.94236755, y: 1.0624152}
+  m_EdgeRadius: 0
 --- !u!1 &103372824
 GameObject:
   m_ObjectHideFlags: 0
@@ -1016,6 +1067,7 @@ GameObject:
   - component: {fileID: 103372827}
   - component: {fileID: 103372826}
   - component: {fileID: 103372825}
+  - component: {fileID: 103372829}
   m_Layer: 0
   m_Name: barnacle (4)
   m_TagString: enemy
@@ -1120,12 +1172,57 @@ Transform:
   m_GameObject: {fileID: 103372824}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -15.764212, y: -0.0537014, z: 0.20689571}
+  m_LocalPosition: {x: -15.764212, y: -0.076, z: 0.20689571}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 630403249}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &103372829
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 103372824}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.120046675}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.28, y: 1.28}
+    newSize: {x: 1.28, y: 1.28}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.9648781, y: 1.0399066}
+  m_EdgeRadius: 0
 --- !u!1 &111322009
 GameObject:
   m_ObjectHideFlags: 0
@@ -1138,6 +1235,7 @@ GameObject:
   - component: {fileID: 111322012}
   - component: {fileID: 111322011}
   - component: {fileID: 111322010}
+  - component: {fileID: 111322014}
   m_Layer: 0
   m_Name: barnacle (2)
   m_TagString: enemy
@@ -1242,12 +1340,57 @@ Transform:
   m_GameObject: {fileID: 111322009}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -27.894213, y: -0.07370138, z: 0.20689571}
+  m_LocalPosition: {x: -27.894213, y: -0.108, z: 0.20689571}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 630403249}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &111322014
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 111322009}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.011254311, y: -0.10504109}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.28, y: 1.28}
+    newSize: {x: 1.28, y: 1.28}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.9723797, y: 1.0699178}
+  m_EdgeRadius: 0
 --- !u!1001 &143345946
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1332,7 +1475,7 @@ GameObject:
   - component: {fileID: 158908233}
   - component: {fileID: 158908232}
   - component: {fileID: 158908231}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: movingPlatform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1506,6 +1649,7 @@ GameObject:
   - component: {fileID: 182738899}
   - component: {fileID: 182738898}
   - component: {fileID: 182738897}
+  - component: {fileID: 182738901}
   m_Layer: 0
   m_Name: barnacle (12)
   m_TagString: enemy
@@ -1610,12 +1754,57 @@ Transform:
   m_GameObject: {fileID: 182738896}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 22.628788, y: -0.042701244, z: 0.20689571}
+  m_LocalPosition: {x: 22.628788, y: -0.091, z: 0.20689571}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 630403249}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &182738901
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182738896}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.108792365}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.28, y: 1.28}
+    newSize: {x: 1.28, y: 1.28}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.96487427, y: 1.0624152}
+  m_EdgeRadius: 0
 --- !u!1001 &218591598
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1690,6 +1879,7 @@ GameObject:
   - component: {fileID: 269154492}
   - component: {fileID: 269154491}
   - component: {fileID: 269154490}
+  - component: {fileID: 269154494}
   m_Layer: 0
   m_Name: barnacle (10)
   m_TagString: enemy
@@ -1794,12 +1984,57 @@ Transform:
   m_GameObject: {fileID: 269154489}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 14.783789, y: -0.03970146, z: 0.20689571}
+  m_LocalPosition: {x: 14.783789, y: -0.1, z: 0.20689571}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 630403249}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &269154494
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 269154489}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.007502556, y: -0.10504085}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.28, y: 1.28}
+    newSize: {x: 1.28, y: 1.28}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.9648762, y: 1.0699183}
+  m_EdgeRadius: 0
 --- !u!1001 &272997463
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2012,7 +2247,7 @@ GameObject:
   m_Component:
   - component: {fileID: 303042482}
   - component: {fileID: 303042483}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: planetHalf_left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2308,7 +2543,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 357335304}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: movingPlatform (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2604,7 +2839,7 @@ GameObject:
   m_Component:
   - component: {fileID: 492635744}
   - component: {fileID: 492635745}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: planetHalf_left (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3144,7 +3379,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 662768762}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: waypoint
   m_TagString: Untagged
   m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
@@ -3160,7 +3395,7 @@ Transform:
   m_GameObject: {fileID: 662768761}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.48, y: -3.83, z: 0}
+  m_LocalPosition: {x: 0.48, y: -5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3437,7 +3672,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 794448447}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: waypoint
   m_TagString: Untagged
   m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
@@ -3453,7 +3688,7 @@ Transform:
   m_GameObject: {fileID: 794448446}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.48, y: -3.83, z: 0}
+  m_LocalPosition: {x: 0.48, y: -5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3469,7 +3704,7 @@ GameObject:
   m_Component:
   - component: {fileID: 832804617}
   - component: {fileID: 832804618}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: planetHalf_left (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3553,7 +3788,7 @@ GameObject:
   m_Component:
   - component: {fileID: 857073962}
   - component: {fileID: 857073963}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: planetHalf_left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3908,7 +4143,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 883744543}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: waypoint (1)
   m_TagString: Untagged
   m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
@@ -3942,6 +4177,7 @@ GameObject:
   - component: {fileID: 944707644}
   - component: {fileID: 944707643}
   - component: {fileID: 944707642}
+  - component: {fileID: 944707646}
   m_Layer: 0
   m_Name: barnacle (6)
   m_TagString: enemy
@@ -4046,12 +4282,57 @@ Transform:
   m_GameObject: {fileID: 944707641}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.1642122, y: -0.03370142, z: 0.20689571}
+  m_LocalPosition: {x: -2.1642122, y: -0.083, z: 0.20689571}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 630403249}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &944707646
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 944707641}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.011254549, y: -0.108792365}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.28, y: 1.28}
+    newSize: {x: 1.28, y: 1.28}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.9573741, y: 1.0624152}
+  m_EdgeRadius: 0
 --- !u!1 &959394819
 GameObject:
   m_ObjectHideFlags: 0
@@ -4333,7 +4614,7 @@ GameObject:
   - component: {fileID: 1029520210}
   - component: {fileID: 1029520209}
   - component: {fileID: 1029520208}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: movingPlatform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4638,7 +4919,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1075211395}
   - component: {fileID: 1075211396}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: planetHalf_left (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4724,6 +5005,7 @@ GameObject:
   - component: {fileID: 1118123544}
   - component: {fileID: 1118123543}
   - component: {fileID: 1118123542}
+  - component: {fileID: 1118123546}
   m_Layer: 0
   m_Name: barnacle (9)
   m_TagString: enemy
@@ -4828,12 +5110,57 @@ Transform:
   m_GameObject: {fileID: 1118123541}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.355787, y: -0.015701294, z: 0.20689571}
+  m_LocalPosition: {x: 9.355787, y: -0.095, z: 0.20689571}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 630403249}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1118123546
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1118123541}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.0037522316, y: -0.10504109}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.28, y: 1.28}
+    newSize: {x: 1.28, y: 1.28}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.9423685, y: 1.0699178}
+  m_EdgeRadius: 0
 --- !u!1 &1140988098
 GameObject:
   m_ObjectHideFlags: 0
@@ -4985,6 +5312,7 @@ GameObject:
   - component: {fileID: 1181541824}
   - component: {fileID: 1181541823}
   - component: {fileID: 1181541822}
+  - component: {fileID: 1181541826}
   m_Layer: 0
   m_Name: barnacle (3)
   m_TagString: enemy
@@ -5089,12 +5417,57 @@ Transform:
   m_GameObject: {fileID: 1181541821}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -21.314213, y: -0.07370138, z: 0.20689571}
+  m_LocalPosition: {x: -21.314213, y: -0.1, z: 0.20689571}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 630403249}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1181541826
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1181541821}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0075035095, y: -0.1087926}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.28, y: 1.28}
+    newSize: {x: 1.28, y: 1.28}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.94987106, y: 1.0624148}
+  m_EdgeRadius: 0
 --- !u!1001 &1181856246
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5370,7 +5743,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1197119006}
   - component: {fileID: 1197119007}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: planetHalf_left (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5797,6 +6170,7 @@ GameObject:
   - component: {fileID: 1404146878}
   - component: {fileID: 1404146877}
   - component: {fileID: 1404146876}
+  - component: {fileID: 1404146880}
   m_Layer: 0
   m_Name: barnacle (5)
   m_TagString: enemy
@@ -5901,12 +6275,57 @@ Transform:
   m_GameObject: {fileID: 1404146875}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -12.944212, y: -0.03370142, z: 0.20689571}
+  m_LocalPosition: {x: -12.944212, y: -0.083, z: 0.20689571}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 630403249}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1404146880
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1404146875}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.003751278, y: -0.11254388}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.28, y: 1.28}
+    newSize: {x: 1.28, y: 1.28}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.9723797, y: 1.0549122}
+  m_EdgeRadius: 0
 --- !u!1 &1421301826
 GameObject:
   m_ObjectHideFlags: 0
@@ -5916,7 +6335,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1421301827}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: waypoint (1)
   m_TagString: Untagged
   m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
@@ -6289,7 +6708,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1467211467}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: movingPlatform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6404,6 +6823,14 @@ PrefabInstance:
       propertyPath: healthImages.Array.data[2]
       value: 
       objectReference: {fileID: 1397315039}
+    - target: {fileID: 280442536120771799, guid: c87c9537127c68a4d85b2df5f11250c2, type: 3}
+      propertyPath: key
+      value: 
+      objectReference: {fileID: 1833163445}
+    - target: {fileID: 280442536120771799, guid: c87c9537127c68a4d85b2df5f11250c2, type: 3}
+      propertyPath: door
+      value: 
+      objectReference: {fileID: 63509293}
     - target: {fileID: 1449623519798868016, guid: c87c9537127c68a4d85b2df5f11250c2, type: 3}
       propertyPath: m_LocalPosition.x
       value: -32.3
@@ -6451,7 +6878,7 @@ PrefabInstance:
     - target: {fileID: 4957499475332756674, guid: c87c9537127c68a4d85b2df5f11250c2, type: 3}
       propertyPath: goldCoinsText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1712610748}
     - target: {fileID: 5876552363317391108, guid: c87c9537127c68a4d85b2df5f11250c2, type: 3}
       propertyPath: m_Constraints
       value: 4
@@ -6498,6 +6925,7 @@ GameObject:
   - component: {fileID: 1490658194}
   - component: {fileID: 1490658193}
   - component: {fileID: 1490658192}
+  - component: {fileID: 1490658196}
   m_Layer: 0
   m_Name: barnacle (11)
   m_TagString: enemy
@@ -6602,12 +7030,57 @@ Transform:
   m_GameObject: {fileID: 1490658191}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 19.045788, y: 0.066298485, z: 0.20689571}
+  m_LocalPosition: {x: 19.045788, y: -0.104, z: 0.20689571}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 630403249}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1490658196
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1490658191}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0037517548, y: -0.10504085}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.28, y: 1.28}
+    newSize: {x: 1.28, y: 1.28}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.94236755, y: 1.0699183}
+  m_EdgeRadius: 0
 --- !u!1 &1492205964
 GameObject:
   m_ObjectHideFlags: 0
@@ -6620,6 +7093,7 @@ GameObject:
   - component: {fileID: 1492205967}
   - component: {fileID: 1492205966}
   - component: {fileID: 1492205965}
+  - component: {fileID: 1492205969}
   m_Layer: 0
   m_Name: barnacle (13)
   m_TagString: enemy
@@ -6724,12 +7198,57 @@ Transform:
   m_GameObject: {fileID: 1492205964}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 33.61579, y: 0.086298466, z: 0.20689571}
+  m_LocalPosition: {x: 33.61579, y: -0.095, z: 0.20689571}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 630403249}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1492205969
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1492205964}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.108792365}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.28, y: 1.28}
+    newSize: {x: 1.28, y: 1.28}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.94986725, y: 1.0624152}
+  m_EdgeRadius: 0
 --- !u!1001 &1499165110
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6812,6 +7331,7 @@ GameObject:
   - component: {fileID: 1508502461}
   - component: {fileID: 1508502460}
   - component: {fileID: 1508502459}
+  - component: {fileID: 1508502463}
   m_Layer: 0
   m_Name: barnacle (1)
   m_TagString: enemy
@@ -6916,12 +7436,57 @@ Transform:
   m_GameObject: {fileID: 1508502458}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -31.394213, y: -0.03370142, z: 0.20689571}
+  m_LocalPosition: {x: -31.394213, y: -0.101, z: 0.20689571}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 630403249}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1508502463
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1508502458}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0063943863, y: -0.09911519}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.28, y: 1.28}
+    newSize: {x: 1.28, y: 1.28}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.9730625, y: 1.0817696}
+  m_EdgeRadius: 0
 --- !u!1001 &1561810237
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7146,7 +7711,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56dc82d56e66ee94cb68058e5c249a87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pauseMenu: {fileID: 0}
+  pauseMenu: {fileID: 1566054348}
 --- !u!1001 &1592810122
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7585,6 +8150,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 7612889053992950438, guid: e77bb3cf5a9d8a64aa3320ef61568731, type: 3}
   m_PrefabInstance: {fileID: 1712610746}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1712610748 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7329684254629401157, guid: e77bb3cf5a9d8a64aa3320ef61568731, type: 3}
+  m_PrefabInstance: {fileID: 1712610746}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1755551291
 GameObject:
   m_ObjectHideFlags: 0
@@ -9750,6 +10326,7 @@ GameObject:
   - component: {fileID: 1779952465}
   - component: {fileID: 1779952464}
   - component: {fileID: 1779952463}
+  - component: {fileID: 1779952467}
   m_Layer: 0
   m_Name: barnacle (8)
   m_TagString: enemy
@@ -9854,12 +10431,57 @@ Transform:
   m_GameObject: {fileID: 1779952462}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.6057882, y: -0.07370138, z: 0.20689571}
+  m_LocalPosition: {x: 1.6057882, y: -0.104, z: 0.20689571}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 630403249}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1779952467
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1779952462}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0075030327, y: -0.10504085}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.28, y: 1.28}
+    newSize: {x: 1.28, y: 1.28}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.949872, y: 1.0699183}
+  m_EdgeRadius: 0
 --- !u!1001 &1810252566
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9991,6 +10613,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bded143b61b1d7c428903f674d08d1c5, type: 3}
+--- !u!1 &1833163445 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3374410139592738859, guid: bded143b61b1d7c428903f674d08d1c5, type: 3}
+  m_PrefabInstance: {fileID: 1833163444}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1858873313
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10947,6 +11574,7 @@ GameObject:
   - component: {fileID: 2135423067}
   - component: {fileID: 2135423066}
   - component: {fileID: 2135423065}
+  - component: {fileID: 2135423069}
   m_Layer: 0
   m_Name: barnacle (7)
   m_TagString: enemy
@@ -11057,6 +11685,51 @@ Transform:
   m_Children: []
   m_Father: {fileID: 630403249}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &2135423069
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2135423064}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.007503167, y: -0.10504085}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.28, y: 1.28}
+    newSize: {x: 1.28, y: 1.28}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.9498712, y: 1.0699183}
+  m_EdgeRadius: 0
 --- !u!1 &2137660184
 GameObject:
   m_ObjectHideFlags: 0
